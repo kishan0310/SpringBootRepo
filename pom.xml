@@ -48,4 +48,18 @@
 		<finalName>docker-spring-boot</finalName>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>myMavenRepo.read</id>
+			<url>https://mymavenrepo.com/repo/0iiVsMrclSjwIWPYCsBH/</url>
+		</repository>
+	</repositories>
+	
+	<distributionManagement>
+		<repository>
+			<id>myMavenRepo.write</id>
+			<url>https://mymavenrepo.com/repo/MGgPejvIbrVLcw2ZoUpl/</url>
+		</repository>
+	</distributionManagement>
+
 </project>
