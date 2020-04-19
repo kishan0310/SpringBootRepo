@@ -32,6 +32,15 @@ pipeline {
 	  
 	  }
 	  
+	  stage ('SonarQube Stage')  {
+	  	
+	  	steps {
+	  		withMaven(maven : 'MVN') {
+	  			sh 'mvn sonar:sonar'
+	  		}
+	  	}
+	  
+	  }
 	  
 	}
 

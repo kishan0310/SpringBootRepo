@@ -11,6 +11,10 @@ docker images
 
 To run image on docker engine using docker container
 docker run -p 8085:8085 docker-spring-boot
+
+
+Parallel free maven repo 
+https://mymavenrepo.com/auth/login.html
 *
 */
 
