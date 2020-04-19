@@ -25,14 +25,16 @@ pipeline {
 	stage ('SonarQube Stage')  {
 	  	
 	  	steps {
+	  	
 	  		withMaven(maven : 'MVN') {
 	  			sh 'mvn sonar:sonar'
 	  		}
-	  	}
-	  	
-	  	timeout(time: 10, unit: 'MINUTES') {
+	  		
+	  		timeout(time: 10, unit: 'MINUTES') {
             waitForQualityGate abortPipeline: true
-        }
+            }
+	  	
+	  	}
 	  
 	  }
 	  
