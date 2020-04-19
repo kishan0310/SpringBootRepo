@@ -44,6 +44,17 @@ pipeline {
 	  
 	  }
 	  
+	  
+	  stage ('Docker Image Build')  {
+	  	
+	  	steps {
+	  		withMaven(maven : 'MVN') {
+	  			sh 'mvn install -Pdocker'
+	  		}
+	  	}
+	  
+	  }
+	  
 	}
 
 
