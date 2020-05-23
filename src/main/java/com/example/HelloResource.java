@@ -27,6 +27,6 @@ public class HelloResource {
 
 	@GetMapping
 	public String hello() {
-		return "Hello YouTube";
+		return "Hello  Everyone";
 	}
 }
